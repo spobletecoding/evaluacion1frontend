@@ -18,7 +18,7 @@ ul {
 ul>li>a {
     color: white;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 14px;
 }
 
 .logo>img {
@@ -104,7 +104,6 @@ h1 {
     display: flex;
     flex-flow: column wrap;
     width: 100vw;
-    background: #f4f4f4;
     align-items: center;
 }
 
@@ -150,6 +149,11 @@ h1 {
     background: #555;
 }
 
+.theme:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
 
 #link:hover {
     transform: scale(1.1);
@@ -169,6 +173,20 @@ footer {
 
 footer p {
     margin-bottom: 0.5rem;
+}
+
+.theme {
+    color: white;
+    background-color: #f39c12;
+    border: none;
+    width: 100px;
+    height: 25px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+button:hover {
+    cursor: pointer;
 }
 
 
