@@ -4,6 +4,19 @@
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+ul {
+    display: flex;
+    flex-flow: row wrap;
+    list-style: none;
+    gap: 20px;
+}
+
+ul>li>a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
 .logo>img {
     width: 250px;
     height: 50px;
@@ -18,17 +31,50 @@
     height: 80px;
 }
 
-ul {
+.home {
     display: flex;
     flex-flow: row wrap;
-    list-style: none;
-    gap: 20px;
+    align-items: center;
+    justify-content: center;
 }
 
-ul>li>a {
-    color: white;
-    text-decoration: none;
-    font-size: 20px;
+.home h1 {
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.description {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    width: 100vw;
+    justify-content: space-around;
+}
+
+.home p {
+    width: 700px;
+}
+
+.home img {
+    height: 300px;
+    width: 400px;
+    border-radius: 10px;
+}
+
+.services {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.services h1 {
+    margin-top: 50px;
+}
+
+.description-services>img {
+    width: 700px;
+    height: 400px;
 }
 
 #link:hover {
@@ -38,5 +84,23 @@ ul>li>a {
 @media only screen and (max-width: 607px) {
     .navbar {
         height: 100px;
+    }
+}
+
+@media only screen and (max-width: 1099px) {
+    .home h1 {
+        margin-bottom: 20px;
+    }
+
+    .description p {
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 730px) {
+
+    .description p {
+        margin-left: 20px;
+        margin-right: 20px;
     }
 }
